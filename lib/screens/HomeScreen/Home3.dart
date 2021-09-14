@@ -1,4 +1,5 @@
 import 'package:coach_app/model/home3list.dart';
+import 'package:coach_app/screens/HomeScreen/home4.dart';
 import 'package:flutter/material.dart';
 
 
@@ -195,7 +196,13 @@ class Home3 extends StatelessWidget {
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Home4(),
+                              ),
+                            );
+                      },
                       style: ElevatedButton.styleFrom(
                           primary: Colors.green.shade500,
                           shape: RoundedRectangleBorder(
