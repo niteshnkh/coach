@@ -180,13 +180,66 @@ class Home3 extends StatelessWidget {
             Container(
               child: Column(
                 children: [
-                  Hometile3(img: Image.asset("assets/home3.png",height: 80,fit: BoxFit.fill,),text: "Donkey Kicks",text1: "6-8 resps",text2: 'rest 30"',text3: "4 sets",),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => Home4(),
+                        ),
+                      );
+                    },
+                      child: Hometile3(
+                        img: Image.asset(
+                          "assets/home3.png",
+                          height: 80,
+                          fit: BoxFit.fill,
+                        ),
+                        text: "Donkey Kicks",
+                        text1: "6-8 resps",
+                        text2: 'rest 30"',
+                        text3: "4 sets",)),
                   SizedBox(height: 10,),
-                  Hometile3(img: Image.asset("assets/home3_1.png",height: 80,fit: BoxFit.fill,),text: "Donkey Kicks",text1: "6-8 resps",text2: 'rest 30"',text3: "4 sets",),
+                  InkWell(
+                    onTap: () {},
+                    child: Hometile3(
+                      img: Image.asset(
+                        "assets/home3_1.png",
+                        height: 80,
+                        fit: BoxFit.fill,
+                      ),
+                      text: "Donkey Kicks",
+                      text1: "6-8 resps",
+                      text2: 'rest 30"',
+                      text3: "4 sets",),
+                  ),
                   SizedBox(height: 10,),
-                  Hometile3(img: Image.asset("assets/home3_2.png",height: 80,fit: BoxFit.fill,),text: "Donkey Kicks",text1: "6-8 resps",text2: 'rest 30"',text3: "4 sets",),
+                  InkWell(
+                    onTap: () {},
+                    child: Hometile3(
+                      img: Image.asset(
+                        "assets/home3_2.png",
+                        height: 80,
+                        fit: BoxFit.fill,
+                      ),
+                      text: "Donkey Kicks",
+                      text1: "6-8 resps",
+                      text2: 'rest 30"',
+                      text3: "4 sets",),
+                  ),
                   SizedBox(height: 10,),
-                  Hometile3(img: Image.asset("assets/home3_3.png",height: 80,fit: BoxFit.fill,),text: "Donkey Kicks",text1: "6-8 resps",text2: 'rest 30"',text3: "4 sets",)
+                  InkWell(
+                    onTap: () {},
+                    child: Hometile3(
+                      img: Image.asset(
+                        "assets/home3_3.png",
+                        height: 80,
+                        fit: BoxFit.fill,
+                      ),
+                      text: "Donkey Kicks",
+                      text1: "6-8 resps",
+                      text2: 'rest 30"',
+                      text3: "4 sets",),
+                  )
                 ],
               ),
             ),
